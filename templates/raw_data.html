@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Raw Data</title>
+  </head>
+  <body>
+      <table>
+          {%for record in data %}
+              <tr>
+                  {%for r in record%}
+                    <td>
+                      {{r}}
+                    </td>
+                    {%endfor%}
+              </tr>
+              {%endfor%}
+        </table>
+  </body>
+</html>
