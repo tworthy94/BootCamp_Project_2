@@ -28,5 +28,9 @@ def db_push():
 def dashboard():
     return render_template("dashboards.html")
 
+@app.route("/geo")
+def geo():
+    return render_template("geo_data.html")
+
 if __name__ == "__main__":
     app.run()
