@@ -17,7 +17,6 @@ engine = create_engine(db_uri)
 def index():
      return render_template("index.html")
 
-
 @app.route("/data")
 def db_push():
     query = engine.execute('SELECT * FROM ' '"volcano_data"')
