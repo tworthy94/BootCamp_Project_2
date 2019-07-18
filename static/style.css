@@ -25,12 +25,13 @@
 }
 
 div {
-  margin-left: 20px;
+  margin: 0 auto;
 }
 
 
 body {
-  background-color: #101010;
+  background-image: url("volcano_bg.jpg");
+  background-size: cover;
   color: #ffffff;
   text-align: center;
 
@@ -54,4 +55,34 @@ iframe {
 
 footer {
   color: #ffffff;
+}
+
+.table-fit {
+  width: 75%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+  background: rgb(255, 255, 255); /* This is for ie8 and below */
+  background: rgba(87, 84, 84, 0.5); 
+  margin-top: 300px;
+}
+
+#home {
+  background-image: url("volcano_bg.gif");
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+#fixed {
+  background-color: url("volcano_bg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+
 }

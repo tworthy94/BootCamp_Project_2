@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel='icon' href='static/favicon.ico' type='image/x-icon'/ >
   <title>Home</title>
 
   <!-- Bring in our bootstrap stylesheet -->
@@ -10,16 +11,16 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="static/style.css">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Volcanoes R Us</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: skyblue;">
+    <a class="navbar-brand" href="/">Volcanopedia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/data">Raw Data <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="/data">Raw Data</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/geo">Geo Data</a>
@@ -33,16 +34,20 @@
 
 </head>
 
-<body>
-
-  <br>
-  <h1> Welcome to Volcanoes-R-Us </h1>
-  <hr>
-
-  <iframe src="https://giphy.com/embed/r5gHt2TCIiHK0" width="1080px" height="720px" frameBorder="0" class="giphy-embed"
-    allowFullScreen></iframe>
-  <p><a href="https://giphy.com/gifs/volcano-eruption-r5gHt2TCIiHK0"></a></p>
-
+<body id="home">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to Volcanopedia!
+        <br>
+        Where the lava is hot and the jokes aren't.
+      </h1>
+      <p class="lead">This is your one stop shop for volcanoes and rocks! The data you will find here comes direct from
+        the
+        Smithsonian's volcano database. All data
+        sets were cleaned, handled, and maintained by a professional team of data analysts.</p>
+      <p class="lead">Our team: Sarah Long, Nick Worthy, Ryan Conway, Harper Miller</p>
+    </div>
+  </div>
 </body>
 
 </html>

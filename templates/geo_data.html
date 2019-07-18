@@ -3,19 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel='icon' href='static/favicon.ico' type='image/x-icon'/ >
   <title>Rock and Volcano Types</title>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Volcanoes R Us</a>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: skyblue;">
+    <a class="navbar-brand" href="/">Volcanopedia</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/data">Raw Data <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="/geo">Geo Data</a>
         </li>
         <li class="nav-item">
@@ -25,18 +32,16 @@
     </div>
   </nav>
 
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/style.css">
-
 </head>
 
-<body>
+<br>
+<br>
+
+<body id="fixed">
 
   <br>
 
-  <table class="table table-striped table-dark" border="2" cellpadding="10">
+  <table class="table table-striped table-dark table-fit" border="2">
     <thead>
       <h1>Volcano Types</h1>
     </thead>
@@ -197,7 +202,7 @@
     </tbody>
   </table>
 
-  <table class="table table-striped table-dark" border="2" cellpadding="10">
+  <table class="table table-striped table-dark table-fit" border="2" cellpadding="10">
     <thead>
       <h1>Rock Types</h1>
     </thead>
